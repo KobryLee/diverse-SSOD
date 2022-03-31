@@ -63,4 +63,7 @@ bash tools/dist_train.sh configs/soft_teacher/soft_teacher_faster_rcnn_r50_caffe
 ```
 
 
-
+### Inference
+```
+bash tools/dist_test.sh <CONFIG_FILE_PATH> <CHECKPOINT_PATH> <NUM_GPUS> --eval bbox --cfg-options model.test_cfg.rcnn.score_thr=<THR>
+```
